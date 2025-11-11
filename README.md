@@ -80,18 +80,8 @@ Storage Service:
 
 ## Testing the Workflow
 ====================
-
-1. Generate Pre-signed URL:
-   curl -X POST https://localhost:5001/api/generate-presigned-url \
-     -H "Content-Type: application/json" \
-     -d '{"fileName":"product.jpg","fileSize":1024,"contentType":"image/jpeg"}'
-
-2. Upload File (using the returned pre-signed URL):
-   curl -X POST "https://localhost:5003/api/Storage/upload?token=<token>&sig=<signature>" \
-     -F "file=@/path/to/product.jpg"
-
-3. Create Product:
-   curl -X POST https://localhost:5001/api/products \
-     -H "Content-Type: application/json" \
-     -d '{"name":"Test Product","description":"Test Description","price":99.99,"imageId":"<image-id-from-upload>"}'
-
+### From Swagger UI:
+1. Generate Pre-signed URL
+2. Upload File (using the signature and token returned from step 1)
+3. Create Product
+  
