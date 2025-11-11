@@ -1,5 +1,5 @@
 # Image File System 
-================================================
+-------------------
 
 ## Project Description
 -------------------
@@ -42,8 +42,6 @@ The system consists of three main components:
 2. Upload Image: Seller uploads file directly to Storage Service using the pre-signed URL
 3. Create Product: Seller creates product with the obtained Image ID
 
-## How to Run Locally
-==================
 
 ## Prerequisites
 -------------
