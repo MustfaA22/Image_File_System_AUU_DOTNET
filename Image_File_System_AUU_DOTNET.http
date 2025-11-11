@@ -1,0 +1,6 @@
+@Image_File_System_AUU_DOTNET_HostAddress = http://localhost:5117
+
+GET {{Image_File_System_AUU_DOTNET_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
